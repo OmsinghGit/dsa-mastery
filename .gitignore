@@ -1,0 +1,16 @@
+# VS Code
+.vscode/
+
+# Build files
+*.exe
+*.out
+*.obj
+*.o
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -197,7 +197,7 @@ $fullPath = Join-Path $path $fileName
 Write-Host ""
 Write-Host "Full Path : $fullPath" -ForegroundColor Cyan
 
-New-Item -ItemType File -Path $fullPath -Force | Out-Null
+Copy-Item "Templates\Solution_Template.cpp" $fullPath
 
 Write-Host ""
 Write-Host "Problem Created Successfully!" -ForegroundColor Green

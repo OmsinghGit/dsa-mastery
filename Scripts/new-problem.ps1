@@ -1,40 +1,49 @@
 Clear-Host
 
 # ==========================================
-# STEP 1 - Banner
+# DSA Mastery - New Problem Creator
+# Version : 1.0
 # ==========================================
 
-Write-Host "===================================" -ForegroundColor Cyan
-Write-Host "        DSA Mastery" -ForegroundColor Yellow
-Write-Host "     New Problem Creator" -ForegroundColor Green
-Write-Host "===================================" -ForegroundColor Cyan
+Write-Host "==========================================" -ForegroundColor Cyan
+Write-Host "             DSA Mastery" -ForegroundColor Yellow
+Write-Host "          New Problem Creator" -ForegroundColor Green
+Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host ""
 
 # ==========================================
-# STEP 2 - Problem Name
+# STEP 1 - Problem Name
 # ==========================================
 
 $name = Read-Host "Enter Problem Name"
+$name = $name.Trim()
+
+if ([string]::IsNullOrWhiteSpace($name)) {
+
+    Write-Host ""
+    Write-Host "Problem name cannot be empty." -ForegroundColor Red
+    exit
+
+}
 
 Write-Host ""
 Write-Host "Problem Name : $name" -ForegroundColor Green
 
 # ==========================================
-# STEP 3 - Pattern Selection
+# STEP 2 - Pattern Selection
 # ==========================================
 
 Write-Host ""
 Write-Host "Select Pattern" -ForegroundColor Cyan
 
-Write-Host "1. Arrays"
-Write-Host "2. Strings"
-Write-Host "3. Hashing"
-Write-Host "4. Two Pointers"
+Write-Host "1.  Arrays"
+Write-Host "2.  Strings"
+Write-Host "3.  Hashing"
+Write-Host "4.  Two Pointers"
 Write-Host "23. Math"
 Write-Host "24. Matrix"
 
 $pattern = Read-Host "Enter Choice"
-
 
 switch ($pattern) {
 
@@ -69,18 +78,20 @@ switch ($pattern) {
     }
 
     default {
+
         Write-Host ""
-        Write-Host "❌ Invalid Pattern!" -ForegroundColor Red
+        Write-Host "Invalid Pattern!" -ForegroundColor Red
         exit
+
     }
+
 }
 
-
 Write-Host ""
-Write-Host "Selected Folder : $folder" -ForegroundColor Green
+Write-Host "Selected Pattern : $patternName" -ForegroundColor Green
 
 # ==========================================
-# STEP 4 - Difficulty
+# STEP 3 - Difficulty
 # ==========================================
 
 Write-Host ""
@@ -95,7 +106,9 @@ $difficulty = Read-Host "Enter Choice"
 switch ($difficulty) {
 
     "1" { $level = "Easy" }
+
     "2" { $level = "Medium" }
+
     "3" { $level = "Hard" }
 
     default {
@@ -112,7 +125,7 @@ Write-Host ""
 Write-Host "Selected Difficulty : $level" -ForegroundColor Green
 
 # ==========================================
-# STEP 5 - Platform
+# STEP 4 - Platform
 # ==========================================
 
 Write-Host ""
@@ -128,8 +141,11 @@ $platform = Read-Host "Enter Choice"
 switch ($platform) {
 
     "1" { $site = "Practice" }
+
     "2" { $site = "LeetCode" }
+
     "3" { $site = "GFG" }
+
     "4" { $site = "Codeforces" }
 
     default {
@@ -146,28 +162,29 @@ Write-Host ""
 Write-Host "Selected Platform : $site" -ForegroundColor Green
 
 # ==========================================
-# STEP 6 - Summary
+# STEP 5 - Summary
 # ==========================================
 
 Write-Host ""
-Write-Host "======================================" -ForegroundColor Yellow
+Write-Host "==========================================" -ForegroundColor Yellow
 Write-Host "Summary" -ForegroundColor Cyan
-Write-Host "======================================" -ForegroundColor Yellow
+Write-Host "==========================================" -ForegroundColor Yellow
 
 Write-Host "Problem     : $name"
+Write-Host "Pattern     : $patternName"
 Write-Host "Folder      : $folder"
 Write-Host "Difficulty  : $level"
 Write-Host "Platform    : $site"
 
 # ==========================================
-# STEP 7 - Confirmation
+# STEP 6 - Confirmation
 # ==========================================
 
 Write-Host ""
 
 $confirm = Read-Host "Create this problem? (Y/N)"
 
-if ($confirm -ne "Y" -and $confirm -ne "y") {
+if ($confirm.ToLower() -ne "y") {
 
     Write-Host ""
     Write-Host "Operation Cancelled." -ForegroundColor Yellow
@@ -175,8 +192,9 @@ if ($confirm -ne "Y" -and $confirm -ne "y") {
 
 }
 
+
 # ==========================================
-# STEP 8 - Target Path
+# STEP 7 - Build Target Path
 # ==========================================
 
 $path = Join-Path $folder $level
@@ -185,7 +203,7 @@ Write-Host ""
 Write-Host "Target Path : $path" -ForegroundColor Cyan
 
 # ==========================================
-# STEP 9 - Create Folder
+# STEP 8 - Create Folder (If Not Exists)
 # ==========================================
 
 if (!(Test-Path $path)) {
@@ -201,28 +219,22 @@ else {
 
 }
 
-
 # ==========================================
-# STEP 10 - Count Existing Problems
+# STEP 9 - Count Existing Problems
 # ==========================================
 
-$count = (Get-ChildItem -Path $path -Filter "*.cpp").Count
+$existingFiles = Get-ChildItem -Path $path -Filter "*.cpp"
+
+$count = $existingFiles.Count
 
 Write-Host ""
 Write-Host "Existing Problems : $count" -ForegroundColor Cyan
 
 # ==========================================
-# STEP 11 - Generate Next Number
+# STEP 10 - Generate Problem ID
 # ==========================================
 
 $nextNumber = $count + 1
-
-Write-Host ""
-Write-Host "Next Problem Number : $nextNumber" -ForegroundColor Cyan
-
-# ==========================================
-# STEP 12 - Format Problem Number
-# ==========================================
 
 $problemId = "{0:D4}" -f $nextNumber
 
@@ -230,50 +242,41 @@ Write-Host ""
 Write-Host "Problem ID : $problemId" -ForegroundColor Green
 
 # ==========================================
-# STEP 10 - Generate File Name
+# STEP 11 - Generate File Name
 # ==========================================
 
-$cleanName = $name.Trim().Replace(" ", "_")
+$cleanName = ($name -replace "\s+", "_").Trim("_")
 
 $fileName = "${problemId}_${cleanName}.cpp"
-
-Write-Host ""
-Write-Host "Generated File Name : $fileName" -ForegroundColor Green
-
-# ==========================================
-# STEP 11 - Full Path
-# ==========================================
 
 $fullPath = Join-Path $path $fileName
 
 Write-Host ""
-Write-Host "Full Path : $fullPath" -ForegroundColor Cyan
+Write-Host "Generated File : $fileName" -ForegroundColor Green
+
+Write-Host "Full Path      : $fullPath" -ForegroundColor Cyan
 
 # ==========================================
-# STEP 13 - Check Duplicate File
+# STEP 12 - Duplicate Problem Check
 # ==========================================
-
-# ==========================================
-# STEP 13 - Check Duplicate Problem
-# ==========================================
-
-$cleanName = $name.Trim().Replace(" ", "_")
-
-$existingFiles = Get-ChildItem -Path $path -Filter "*.cpp"
 
 foreach ($file in $existingFiles) {
 
     if ($file.BaseName -match "^\d{4}_(.+)$") {
+
         $existingProblem = $matches[1]
+
     }
     else {
+
         $existingProblem = $file.BaseName
+
     }
 
     if ($existingProblem.ToLower() -eq $cleanName.ToLower()) {
 
         Write-Host ""
-        Write-Host "Error: Problem already exists!" -ForegroundColor Red
+        Write-Host "Problem already exists!" -ForegroundColor Red
         exit
 
     }
@@ -281,10 +284,24 @@ foreach ($file in $existingFiles) {
 }
 
 # ==========================================
-# STEP 12 - Generate File From Template
+# STEP 13 - Read Template
 # ==========================================
 
-$template = Get-Content "Templates\Solution_Template.cpp" -Raw
+$templatePath = "Templates\Solution_Template.cpp"
+
+if (!(Test-Path $templatePath)) {
+
+    Write-Host ""
+    Write-Host "Solution_Template.cpp not found!" -ForegroundColor Red
+    exit
+
+}
+
+$template = Get-Content -Path $templatePath -Raw
+
+# ==========================================
+# STEP 14 - Replace Placeholders
+# ==========================================
 
 $template = $template.Replace("{{PROBLEM}}", $name)
 $template = $template.Replace("{{PLATFORM}}", $site)
@@ -292,8 +309,29 @@ $template = $template.Replace("{{PATTERN}}", $patternName)
 $template = $template.Replace("{{DIFFICULTY}}", $level)
 $template = $template.Replace("{{DATE}}", (Get-Date -Format "dd-MM-yyyy"))
 
+# ==========================================
+# STEP 15 - Create Problem File
+# ==========================================
+
 Set-Content -Path $fullPath -Value $template
-code -r $fullPath
+
+# ==========================================
+# STEP 16 - Success Message
+# ==========================================
 
 Write-Host ""
+Write-Host "==========================================" -ForegroundColor Green
 Write-Host "Problem Created Successfully!" -ForegroundColor Green
+Write-Host "==========================================" -ForegroundColor Green
+
+Write-Host ""
+Write-Host "Problem ID : $problemId" -ForegroundColor Cyan
+Write-Host "Problem    : $name" -ForegroundColor Cyan
+Write-Host "Pattern    : $patternName" -ForegroundColor Cyan
+Write-Host "Difficulty : $level" -ForegroundColor Cyan
+
+Write-Host ""
+Write-Host "Created File : $fullPath" -ForegroundColor Yellow
+
+Write-Host ""
+Write-Host "Happy Coding!" -ForegroundColor Green

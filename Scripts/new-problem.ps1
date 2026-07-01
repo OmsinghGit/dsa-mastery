@@ -35,24 +35,46 @@ Write-Host "24. Matrix"
 
 $pattern = Read-Host "Enter Choice"
 
+
 switch ($pattern) {
 
-    "1"  { $folder = "01-Arrays" }
-    "2"  { $folder = "02-Strings" }
-    "3"  { $folder = "03-Hashing" }
-    "4"  { $folder = "04-Two-Pointers" }
-    "23" { $folder = "23-Math" }
-    "24" { $folder = "24-Matrix" }
-
-    default {
-
-        Write-Host ""
-        Write-Host "Invalid Pattern!" -ForegroundColor Red
-        exit
-
+    "1" {
+        $folder = "01-Arrays"
+        $patternName = "Arrays"
     }
 
+    "2" {
+        $folder = "02-Strings"
+        $patternName = "Strings"
+    }
+
+    "3" {
+        $folder = "03-Hashing"
+        $patternName = "Hashing"
+    }
+
+    "4" {
+        $folder = "04-Two-Pointers"
+        $patternName = "Two Pointers"
+    }
+
+    "23" {
+        $folder = "23-Math"
+        $patternName = "Math"
+    }
+
+    "24" {
+        $folder = "24-Matrix"
+        $patternName = "Matrix"
+    }
+
+    default {
+        Write-Host ""
+        Write-Host "❌ Invalid Pattern!" -ForegroundColor Red
+        exit
+    }
 }
+
 
 Write-Host ""
 Write-Host "Selected Folder : $folder" -ForegroundColor Green
@@ -179,11 +201,41 @@ else {
 
 }
 
+
+# ==========================================
+# STEP 10 - Count Existing Problems
+# ==========================================
+
+$count = (Get-ChildItem -Path $path -Filter "*.cpp").Count
+
+Write-Host ""
+Write-Host "Existing Problems : $count" -ForegroundColor Cyan
+
+# ==========================================
+# STEP 11 - Generate Next Number
+# ==========================================
+
+$nextNumber = $count + 1
+
+Write-Host ""
+Write-Host "Next Problem Number : $nextNumber" -ForegroundColor Cyan
+
+# ==========================================
+# STEP 12 - Format Problem Number
+# ==========================================
+
+$problemId = "{0:D4}" -f $nextNumber
+
+Write-Host ""
+Write-Host "Problem ID : $problemId" -ForegroundColor Green
+
 # ==========================================
 # STEP 10 - Generate File Name
 # ==========================================
 
-$fileName = $name.Trim().Replace(" ", "_") + ".cpp"
+$cleanName = $name.Trim().Replace(" ", "_")
+
+$fileName = "${problemId}_${cleanName}.cpp"
 
 Write-Host ""
 Write-Host "Generated File Name : $fileName" -ForegroundColor Green
@@ -197,7 +249,51 @@ $fullPath = Join-Path $path $fileName
 Write-Host ""
 Write-Host "Full Path : $fullPath" -ForegroundColor Cyan
 
-Copy-Item "Templates\Solution_Template.cpp" $fullPath
+# ==========================================
+# STEP 13 - Check Duplicate File
+# ==========================================
+
+# ==========================================
+# STEP 13 - Check Duplicate Problem
+# ==========================================
+
+$cleanName = $name.Trim().Replace(" ", "_")
+
+$existingFiles = Get-ChildItem -Path $path -Filter "*.cpp"
+
+foreach ($file in $existingFiles) {
+
+    if ($file.BaseName -match "^\d{4}_(.+)$") {
+        $existingProblem = $matches[1]
+    }
+    else {
+        $existingProblem = $file.BaseName
+    }
+
+    if ($existingProblem.ToLower() -eq $cleanName.ToLower()) {
+
+        Write-Host ""
+        Write-Host "Error: Problem already exists!" -ForegroundColor Red
+        exit
+
+    }
+
+}
+
+# ==========================================
+# STEP 12 - Generate File From Template
+# ==========================================
+
+$template = Get-Content "Templates\Solution_Template.cpp" -Raw
+
+$template = $template.Replace("{{PROBLEM}}", $name)
+$template = $template.Replace("{{PLATFORM}}", $site)
+$template = $template.Replace("{{PATTERN}}", $patternName)
+$template = $template.Replace("{{DIFFICULTY}}", $level)
+$template = $template.Replace("{{DATE}}", (Get-Date -Format "dd-MM-yyyy"))
+
+Set-Content -Path $fullPath -Value $template
+code -r $fullPath
 
 Write-Host ""
 Write-Host "Problem Created Successfully!" -ForegroundColor Green

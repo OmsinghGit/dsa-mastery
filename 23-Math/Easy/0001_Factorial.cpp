@@ -1,16 +1,16 @@
 /*
 ===============================================================================
-Problem      : {{PROBLEM}}
-Platform     : {{PLATFORM}}
-Pattern      : {{PATTERN}}
-Difficulty   : {{DIFFICULTY}}
+Problem      : Factorial
+Platform     : Practice
+Pattern      : 23-Math
+Difficulty   : Easy
 
 Approach     :
 
 Time Complexity  :
 Space Complexity :
 
-Date         : {{DATE}}
+Date         : 01-07-2026
 Author       : Om Singh
 ===============================================================================
 */

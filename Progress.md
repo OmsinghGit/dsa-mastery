@@ -2,9 +2,9 @@
 
 ## Questions Solved
 
-Total : 0
+Total : 1
 
-Easy : 0
+Easy : 1
 
 Medium : 0
 

@@ -1,23 +1,36 @@
 /*
-=========================================
+===============================================================================
 Problem      : Two Sum
 Platform     : LeetCode
-Problem No.  : 1
+Pattern      : Arrays
 Difficulty   : Easy
 
-Pattern       : Arrays
-Technique     : Hash Map
+Approach     : 1. Use two nested loops.
+               2. Check every possible pair.
+               3. If sum equals target, return their indices.
 
-Time Complexity  : O(n)
-Space Complexity : O(n)
+Time Complexity  :
+Space Complexity :
 
-Date Solved   :
-=========================================
+Date         : 02-07-2026
+Author       : Om Singh
+===============================================================================
 */
 
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+#include <bits/stdc++.h>
+using namespace std;
 
-    }
-};
+void solve()
+{
+
+}
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    solve();
+
+    return 0;
+}

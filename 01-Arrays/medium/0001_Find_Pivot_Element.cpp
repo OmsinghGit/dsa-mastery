@@ -17,7 +17,6 @@ Author       : Om Singh
 
 #include <bits/stdc++.h>
 using namespace std;
-
 void solve()
 {
 

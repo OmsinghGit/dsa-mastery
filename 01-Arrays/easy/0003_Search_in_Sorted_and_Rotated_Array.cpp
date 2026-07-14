@@ -1,3 +1,4 @@
+#include <vector>
 /*
 ===============================================================================
 Problem      : Search in Sorted and Rotated Array

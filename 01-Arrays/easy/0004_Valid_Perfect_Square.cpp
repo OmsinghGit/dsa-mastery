@@ -14,21 +14,52 @@ Date         : 15-07-2026
 Author       : Om Singh
 ===============================================================================
 */
-
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-void solve()
+bool isPerfectSquare(int num)
 {
+    int s = 0;
+    int e = num;
 
+    while (s <= e)
+    {
+        int mid = s + (e - s) / 2;
+
+        long long square = 1LL * mid * mid;
+
+        if (square == num)
+        {
+            return true;
+        }
+        else if (square < num)
+        {
+            s = mid + 1;
+        }
+        else
+        {
+            e = mid - 1;
+        }
+    }
+
+    return false;
 }
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    int num;
 
-    solve();
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (isPerfectSquare(num))
+    {
+        cout << num << " is a Perfect Square." << endl;
+    }
+    else
+    {
+        cout << num << " is NOT a Perfect Square." << endl;
+    }
 
     return 0;
 }

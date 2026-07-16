@@ -7,7 +7,7 @@ Difficulty   : Medium
 
 Approach     :
 
-Time Complexity  :
+Time Complexity  : O(log(n))
 Space Complexity :
 
 Date         : 13-07-2026

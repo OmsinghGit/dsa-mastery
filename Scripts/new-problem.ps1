@@ -260,6 +260,8 @@ switch ($platform) {
     "3" { $site = "GFG" }
 
     "4" { $site = "Codeforces" }
+    
+    "5" { $site = "Coding Ninjas" }
 
     default {
 

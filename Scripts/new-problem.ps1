@@ -35,13 +35,31 @@ Write-Host "Problem Name : $name" -ForegroundColor Green
 
 Write-Host ""
 Write-Host "Select Pattern" -ForegroundColor Cyan
-
 Write-Host "1.  Arrays"
 Write-Host "2.  Strings"
 Write-Host "3.  Hashing"
 Write-Host "4.  Two Pointers"
+Write-Host "5.  Sliding Window"
+Write-Host "6.  Prefix Sum"
+Write-Host "7.  Binary Search"
+Write-Host "8.  Sorting"
+Write-Host "9.  Bit Manipulation"
+Write-Host "10. Stack"
+Write-Host "11. Queue"
+Write-Host "12. Heap / Priority Queue"
+Write-Host "13. Linked List"
+Write-Host "14. Recursion"
+Write-Host "15. Backtracking"
+Write-Host "16. Binary Tree"
+Write-Host "17. BST"
+Write-Host "18. Trie"
+Write-Host "19. Graph"
+Write-Host "20. Greedy"
+Write-Host "21. Intervals"
+Write-Host "22. Dynamic Programming"
 Write-Host "23. Math"
 Write-Host "24. Matrix"
+Write-Host "25. Advanced"
 
 $pattern = Read-Host "Enter Choice"
 
@@ -67,6 +85,96 @@ switch ($pattern) {
         $patternName = "Two Pointers"
     }
 
+    "5" {
+    $folder = "05-Sliding-Window"
+    $patternName = "Sliding Window"
+}
+
+"6" {
+    $folder = "06-Prefix-Sum"
+    $patternName = "Prefix Sum"
+}
+
+"7" {
+    $folder = "07-Binary-Search"
+    $patternName = "Binary Search"
+}
+
+    "8" {
+    $folder = "08-Sorting"
+    $patternName = "Sorting"
+}
+
+"9" {
+    $folder = "09-Bit-Manipulation"
+    $patternName = "Bit Manipulation"
+}
+
+"10" {
+    $folder = "10-Stack"
+    $patternName = "Stack"
+}
+
+"11" {
+    $folder = "11-Queue"
+    $patternName = "Queue"
+}
+
+"12" {
+    $folder = "12-Heap-Priority-Queue"
+    $patternName = "Heap / Priority Queue"
+}
+
+"13" {
+    $folder = "13-Linked-List"
+    $patternName = "Linked List"
+}
+
+"14" {
+    $folder = "14-Recursion"
+    $patternName = "Recursion"
+}
+
+"15" {
+    $folder = "15-Backtracking"
+    $patternName = "Backtracking"
+}
+
+"16" {
+    $folder = "16-Binary-Tree"
+    $patternName = "Binary Tree"
+}
+
+"17" {
+    $folder = "17-BST"
+    $patternName = "BST"
+}
+
+"18" {
+    $folder = "18-Trie"
+    $patternName = "Trie"
+}
+
+"19" {
+    $folder = "19-Graph"
+    $patternName = "Graph"
+}
+
+"20" {
+    $folder = "20-Greedy"
+    $patternName = "Greedy"
+}
+
+"21" {
+    $folder = "21-Intervals"
+    $patternName = "Intervals"
+}
+
+"22" {
+    $folder = "22-Dynamic-Programming"
+    $patternName = "Dynamic Programming"
+}
+
     "23" {
         $folder = "23-Math"
         $patternName = "Math"
@@ -77,6 +185,10 @@ switch ($pattern) {
         $patternName = "Matrix"
     }
 
+    "25" {
+    $folder = "25-Advanced"
+    $patternName = "Advanced"
+}
     default {
 
         Write-Host ""

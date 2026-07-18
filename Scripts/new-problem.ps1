@@ -247,6 +247,7 @@ Write-Host "1. Practice"
 Write-Host "2. LeetCode"
 Write-Host "3. GFG"
 Write-Host "4. Codeforces"
+Write-Host "5. Coding Ninjas"
 
 $platform = Read-Host "Enter Choice"
 

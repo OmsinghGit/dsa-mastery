@@ -16,21 +16,22 @@ Date         : 23-07-2026
 Author       : Om Singh
 ===============================================================================
 */
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+         int maximumWealth=0;
+        for (int i=0 ; i<accounts.size(); i++)
+        {
+            int sum=0;
+            for (int j=0; j<accounts[0].size(); j++)
+            {
+               sum += accounts[i][j];
+    
+                if (sum > maximumWealth)
+                maximumWealth = sum;
 
-#include <bits/stdc++.h>
-using namespace std;
-
-void solve()
-{
-
-}
-
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
-}
+            }
+        }
+        return maximumWealth;
+    }
+};

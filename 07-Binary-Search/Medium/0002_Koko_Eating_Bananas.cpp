@@ -5,12 +5,17 @@ Platform     : LeetCode
 Pattern      : Binary Search
 Difficulty   : Medium
 
-Approach     : Through binary search, 
+Approach     : Use Binary Search on Answer to find the minimum eating speed. For each possible speed, calculate 
+               the total hours required to eat all the banana piles. If Koko can finish within h hours, 
+               store the answer and try a smaller speed. Otherwise, search for a larger speed.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  :  O(n × log(maxPile))
+Space Complexity :  O(1)
 
-Interview Explanation : 
+Interview Explanation : The minimum eating speed follows a monotonic pattern. If Koko can finish
+                        all bananas at a certain speed, then she can also finish at any higher speed. This allows 
+                        us to apply Binary Search on Answer. We use a helper function to calculate the total hours 
+                        needed for a given speed and then adjust the search space to find the minimum valid speed.
 
 Date         : 23-07-2026
 Author       : Om Singh

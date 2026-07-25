@@ -5,9 +5,12 @@ Platform     : LeetCode
 Pattern      : Sorting
 Difficulty   : Easy
 
-Approach     :
+Approach     : Extract each digit of the number using the modulo (%) and division (/) 
+               operators. Keep track of the largest and second largest digits while traversing
+               all the digits. Finally, return the product of these two digits.
 
-Time Complexity  :
+Time Complexity  :  O(d),  where d is number of digits in the given number
+                    we traverse each digits once
 Space Complexity :
 
 Interview Explanation : 

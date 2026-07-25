@@ -11,9 +11,12 @@ Approach     : Extract each digit of the number using the modulo (%) and divisio
 
 Time Complexity  :  O(d),  where d is number of digits in the given number
                     we traverse each digits once
-Space Complexity :
+Space Complexity : O(1) We only use a few extra variables (largest, secondLargest, and digit),
+                   so no extra space is required
 
-Interview Explanation : 
+Interview Explanation : I traverse all the digits of the given number one by one using % and /. During the traversal, I maintain the 
+                        largest and second largest digits. After processing all the digits, I return the product of these two digits. 
+                        This approach avoids storing all the digits and solves the problem in a single pass.
 
 Date         : 25-07-2026
 Author       : Om Singh

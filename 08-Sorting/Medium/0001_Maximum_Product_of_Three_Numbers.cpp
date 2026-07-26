@@ -16,3 +16,25 @@ Date         : 26-07-2026
 Author       : Om Singh
 ===============================================================================
 */
+
+
+// This solution is good but not optimal so TLE shows.
+
+// class Solution {
+// public:
+//     int maximumProduct(vector<int>& nums) {
+//         int ans = INT_MIN;
+//         for (int i=0; i<nums.size(); i++)
+//         {
+//             for (int j=i+1; j<nums.size(); j++)
+//             {
+//                 for (int k=j+1; k<nums.size(); k++)
+//                 {
+//                     int product = nums[i] * nums[j] * nums[k];
+//                     ans = max(ans, product);
+//                 }
+//             }
+//         }
+//         return ans;
+//     }
+// };  

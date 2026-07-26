@@ -42,7 +42,7 @@ Author       : Om Singh
 //     }
 // };  
 
-// Optimal Solution 
+// Optimal Solution is here
 
 class Solution {
 public:

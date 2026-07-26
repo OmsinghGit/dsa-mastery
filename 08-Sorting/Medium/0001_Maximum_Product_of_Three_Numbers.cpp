@@ -5,12 +5,15 @@ Platform     : LeetCode
 Pattern      : Sorting
 Difficulty   : Medium
 
-Approach     :
+Approach     : Sort the array in ascending order. Then calculate two possible products:
+                    The product of the three largest numbers.
+                    The product of the two smallest numbers and the largest number.
+                Return the maximum of these two products.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  :  O(n log n) - Sorting the array takes O(n log n) time. Calculating the two products takes O(1) time.
+Space Complexity :  O(1) - No extra data structure is used. The calculations are performed using a few variables only.
 
-Interview Explanation : 
+Interview Explanation : Sort the array, calculate the only two possible maximum products, and return the larger one.
 
 Date         : 26-07-2026
 Author       : Om Singh

@@ -15,7 +15,9 @@ Time Complexity  : O(n)
 Space Complexity : O(1)
                     Only a few extra variables are used, so the space complexity is O(1).
 
-Interview Explanation : 
+Interview Explanation : The maximum value of (nums[i] - 1) * (nums[j] - 1) will always be formed by the two largest elements in the array. Therefore, instead of
+                        checking every pair, we keep track of the largest and second largest elements in a single traversal. This avoids unnecessary comparisons 
+                        and gives the optimal solution in linear time.
 
 Date         : 27-07-2026
 Author       : Om Singh

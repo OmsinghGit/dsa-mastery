@@ -11,7 +11,9 @@ Approach     : Traverse the array only once while keeping track of the largest a
 
 Time Complexity  : O(n)
                     We traverse the array only once, so the time complexity is O(n).
-Space Complexity :
+
+Space Complexity : O(1)
+                    Only a few extra variables are used, so the space complexity is O(1).
 
 Interview Explanation : 
 

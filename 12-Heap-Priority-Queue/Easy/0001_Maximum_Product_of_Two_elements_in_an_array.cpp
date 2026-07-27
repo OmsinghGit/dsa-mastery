@@ -15,7 +15,9 @@ Time Complexity  :  O(n log n)
 Space Complexity :  O(n)
                     The priority queue stores all the elements of the array.
 
-Interview Explanation : 
+Interview Explanation : A Max Heap always keeps the largest element at the top. By inserting all the elements into the heap, we can directly 
+                        access the two largest elements without sorting the array. After extracting these two elements, 
+                        we calculate and return (first - 1) * (second - 1).
 
 Date         : 27-07-2026
 Author       : Om Singh

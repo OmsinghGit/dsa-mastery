@@ -5,7 +5,8 @@ Platform     : LeetCode
 Pattern      : Heap / Priority Queue
 Difficulty   : Easy
 
-Approach     :
+Approach     : Use a Max Heap (Priority Queue) to store all the elements. The two largest elements will be at the top of the heap.
+               Remove the largest element, get the second largest element, and calculate the required product.
 
 Time Complexity  :
 Space Complexity :

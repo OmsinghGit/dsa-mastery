@@ -11,8 +11,9 @@ Approach     : Use a Max Heap (Priority Queue) to store all the elements. The tw
 Time Complexity  :  O(n log n)
                         Inserting all n elements into the heap takes O(n log n).
                         Retrieving the top two elements takes O(log n).
-                        
-Space Complexity :
+
+Space Complexity :  O(n)
+                    The priority queue stores all the elements of the array.
 
 Interview Explanation : 
 

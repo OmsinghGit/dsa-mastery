@@ -17,20 +17,20 @@ Author       : Om Singh
 ===============================================================================
 */
 
-#include <bits/stdc++.h>
-using namespace std;
-
-void solve()
-{
-
-}
-
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
-}
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+        int largest = -1, secondLargest = -1;
+        for (int i=0; i<nums.size(); i++){
+            int current = nums[i];
+             if (current > largest)
+             {
+                secondLargest = largest;
+                largest = current;
+             }
+             else if(current > secondLargest)
+             secondLargest = current;
+        }
+        return (largest - 1) * (secondLargest - 1);
+    }
+};

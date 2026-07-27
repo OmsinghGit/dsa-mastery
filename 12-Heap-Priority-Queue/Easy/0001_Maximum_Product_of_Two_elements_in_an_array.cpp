@@ -8,7 +8,10 @@ Difficulty   : Easy
 Approach     : Use a Max Heap (Priority Queue) to store all the elements. The two largest elements will be at the top of the heap.
                Remove the largest element, get the second largest element, and calculate the required product.
 
-Time Complexity  :
+Time Complexity  :  O(n log n)
+                        Inserting all n elements into the heap takes O(n log n).
+                        Retrieving the top two elements takes O(log n).
+                        
 Space Complexity :
 
 Interview Explanation : 

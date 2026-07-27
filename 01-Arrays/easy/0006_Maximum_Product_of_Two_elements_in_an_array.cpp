@@ -5,7 +5,9 @@ Platform     : LeetCode
 Pattern      : Arrays
 Difficulty   : Easy
 
-Approach     :
+Approach     : Traverse the array only once while keeping track of the largest and the second largest 
+               elements. If the current element is greater than the largest, update both variables.
+               Otherwise, if it is greater than the second largest, update only the second largest. Finally, return (largest - 1) * (secondLargest - 1).
 
 Time Complexity  :
 Space Complexity :

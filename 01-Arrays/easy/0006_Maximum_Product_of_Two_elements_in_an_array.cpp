@@ -9,7 +9,8 @@ Approach     : Traverse the array only once while keeping track of the largest a
                elements. If the current element is greater than the largest, update both variables.
                Otherwise, if it is greater than the second largest, update only the second largest. Finally, return (largest - 1) * (secondLargest - 1).
 
-Time Complexity  :
+Time Complexity  : O(n)
+                    We traverse the array only once, so the time complexity is O(n).
 Space Complexity :
 
 Interview Explanation : 

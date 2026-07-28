@@ -9,7 +9,7 @@ Approach     : Multi-source BFS → Compute minimum distance of each cell to nea
                Binary Search → On possible safeness values.
                Path Check (BFS/DFS) → Verify if a path exists with safeness ≥
 
-Time Complexity  :
+Time Complexity  : O(n^2.logn)
 Space Complexity :
 
 Interview Explanation : 

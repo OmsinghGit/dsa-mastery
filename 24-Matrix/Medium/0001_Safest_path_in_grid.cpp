@@ -5,7 +5,9 @@ Platform     : LeetCode
 Pattern      : Matrix
 Difficulty   : Medium
 
-Approach     :
+Approach     : Multi-source BFS → Compute minimum distance of each cell to nearest thief.
+               Binary Search → On possible safeness values.
+               Path Check (BFS/DFS) → Verify if a path exists with safeness ≥
 
 Time Complexity  :
 Space Complexity :

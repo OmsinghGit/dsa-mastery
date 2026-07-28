@@ -14,7 +14,7 @@ Approach     :  Create a frequency array of size 26 to count the occurrence of e
                 Return the concatenation:
                    firstHalf + middle + lastHalf.
 
-Time Complexity  :  
+Time Complexity  :  O(n)
 Space Complexity :
 
 Interview Explanation : 

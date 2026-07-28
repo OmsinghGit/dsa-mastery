@@ -12,7 +12,9 @@ Approach     : Multi-source BFS → Compute minimum distance of each cell to nea
 Time Complexity  : O(n^2.logn)
 Space Complexity : O(n^2) Distance matrix + visited matrix
 
-Interview Explanation : 
+Interview Explanation :  We use multi-source BFS to find each cell’s nearest thief distance, 
+                        then apply binary search on the safeness factor and check paths with BFS/DFS. 
+                        This shows mastery of combining graph traversal with optimization in a clean way.
 
 Date         : 28-07-2026
 Author       : Om Singh

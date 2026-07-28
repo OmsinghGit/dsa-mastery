@@ -10,7 +10,7 @@ Approach     : Multi-source BFS → Compute minimum distance of each cell to nea
                Path Check (BFS/DFS) → Verify if a path exists with safeness ≥
 
 Time Complexity  : O(n^2.logn)
-Space Complexity :
+Space Complexity : O(n^2) Distance matrix + visited matrix
 
 Interview Explanation : 
 

@@ -18,7 +18,10 @@ Time Complexity  :  O(n)
 Space Complexity :  O(n)
 
 Note : If the output string is counted, the space is O(n). If interviewers don't count the output string (which is common), the auxiliary space is O(1) because only the frequency array is extra.
-Interview Explanation : 
+
+Interview Explanation : I first count the frequency of every character using a frequency array. Then I iterate from 'a' to 'z' so that characters are processed in lexicographical order. 
+                        I add half of each character's occurrences to the first half of the palindrome and store the odd-frequency character as the middle. Finally, I reverse the first half to form 
+                        the second half and concatenate firstHalf + middle + lastHalf. Processing characters in sorted order guarantees the lexicographically smallest palindrome.
 
 Date         : 28-07-2026
 Author       : Om Singh

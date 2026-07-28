@@ -15,7 +15,7 @@ Approach     :  Create a frequency array of size 26 to count the occurrence of e
                    firstHalf + middle + lastHalf.
 
 Time Complexity  :  O(n)
-Space Complexity :
+Space Complexity :  O(n)
 
 Interview Explanation : 
 

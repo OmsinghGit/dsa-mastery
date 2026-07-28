@@ -17,6 +17,7 @@ Approach     :  Create a frequency array of size 26 to count the occurrence of e
 Time Complexity  :  O(n)
 Space Complexity :  O(n)
 
+Note : If the output string is counted, the space is O(n). If interviewers don't count the output string (which is common), the auxiliary space is O(1) because only the frequency array is extra.
 Interview Explanation : 
 
 Date         : 28-07-2026

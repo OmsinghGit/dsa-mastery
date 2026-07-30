@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-Problem      : Maximum number of words found in Sentences
+Problem      : Jwells and Stones
 Platform     : LeetCode
 Pattern      : Strings
 Difficulty   : Easy
@@ -12,8 +12,7 @@ Space Complexity :
 
 Interview Explanation : 
 
-Date         : 22-07-2026
+Date         : 30-07-2026
 Author       : Om Singh
 ===============================================================================
 */
- 

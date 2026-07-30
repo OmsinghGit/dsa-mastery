@@ -5,13 +5,13 @@ Platform     : LeetCode
 Pattern      : Strings
 Difficulty   : Medium
 
-Approach     :  Create a frequency array of size 26 to count the occurrence of each character.
-                Traverse the input string and update the frequency of each character.
-                Traverse the frequency array from 'a' to 'z'.
-                Add frequency / 2 copies of each character to firstHalf.
+Approach     :  > Create a frequency array of size 26 to count the occurrence of each character.
+                > Traverse the input string and update the frequency of each character.
+                > Traverse the frequency array from 'a' to 'z'.
+                > Add frequency / 2 copies of each character to firstHalf.
                     If a character has an odd frequency, store it as the middle character.
                     Create lastHalf by reversing firstHalf.
-                Return the concatenation:
+                > Return the concatenation:
                    firstHalf + middle + lastHalf.
 
 Time Complexity  :  O(n)

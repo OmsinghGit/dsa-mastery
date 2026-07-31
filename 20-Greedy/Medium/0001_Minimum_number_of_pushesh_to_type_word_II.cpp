@@ -15,10 +15,14 @@ Approach     : Count the frequency of each character using a frequency array of 
                 For each frequency, multiply it by its assigned push cost and add it to the final answer.
                 Return the total minimum pushes.
 
-Time Complexity  : 
-Space Complexity :
+Time Complexity  : Counting frequencies: O(n), Sorting 26 frequencies: O(26 log 26) = O(1) (constant because the alphabet size is fixed)
+                    Traversing the frequency array: O(26) = O(1)
+                    Overall Time Complexity: O(n)
 
-Interview Explanation : 
+Space Complexity : Frequency array of size 26. Overall Space Complexity: O(1)
+
+Interview Explanation : I count the frequency of each character and sort the frequencies in descending order.
+                        
 
 Date         : 31-07-2026
 Author       : Om Singh

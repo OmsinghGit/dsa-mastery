@@ -22,7 +22,7 @@ Time Complexity  : Counting frequencies: O(n), Sorting 26 frequencies: O(26 log 
 Space Complexity : Frequency array of size 26. Overall Space Complexity: O(1)
 
 Interview Explanation : I count the frequency of each character and sort the frequencies in descending order.
-                        
+                        Then, I greedily assign the lowest push cost to the highest frequencies.
 
 Date         : 31-07-2026
 Author       : Om Singh

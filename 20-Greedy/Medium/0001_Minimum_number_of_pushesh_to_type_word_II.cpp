@@ -23,7 +23,8 @@ Space Complexity : Frequency array of size 26. Overall Space Complexity: O(1)
 
 Interview Explanation : I count the frequency of each character and sort the frequencies in descending order.
                         Then, I greedily assign the lowest push cost to the highest frequencies.
-
+                        The first eight frequencies cost one push, the next eight cost two pushes, and so on.
+                        Finally, I multiply each frequency by its assigned cost and sum them to get the minimum number of pushes.
 Date         : 31-07-2026
 Author       : Om Singh
 ===============================================================================

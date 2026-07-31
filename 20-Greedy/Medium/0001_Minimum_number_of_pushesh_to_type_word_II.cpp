@@ -5,9 +5,17 @@ Platform     : LeetCode
 Pattern      : Greedy
 Difficulty   : Medium
 
-Approach     :
+Approach     : Count the frequency of each character using a frequency array of size 26.
+               Sort the frequency array in descending order so that the most frequent characters come first.
+               Assign the lowest push cost to the highest frequencies:
+                    > First 8 characters → 1 push
+                    > Next 8 characters → 2 pushes
+                    > Next 8 characters → 3 pushes
+                    > Remaining characters → 4 pushes
+                For each frequency, multiply it by its assigned push cost and add it to the final answer.
+                Return the total minimum pushes.
 
-Time Complexity  :
+Time Complexity  : 
 Space Complexity :
 
 Interview Explanation : 

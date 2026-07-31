@@ -2,7 +2,7 @@
 ===============================================================================
 Problem      : Minimum number of pushes to type word I
 Platform     : LeetCode
-Pattern      : Strings
+Pattern      : Greedy / String
 Difficulty   : Easy
 
 Approach     :  Since all characters are distinct, assign each new character to the position requiring the minimum number of pushes.

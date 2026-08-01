@@ -17,7 +17,7 @@ Approach     : > Calculate the total sum of all elements.
                >If player1Score >= player2Score, return true; otherwise, return false.
 
 Time Complexity  : O(2ⁿ) - Every state recursively explores multiple possibilities, leading to exponential time.
-Space Complexity :
+Space Complexity : O(n) - Due to the recursion call stack.
 
 Company Question - Amazon - important question
 Interview Explanation : 

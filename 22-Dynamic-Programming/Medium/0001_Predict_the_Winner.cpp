@@ -20,7 +20,11 @@ Time Complexity  : O(2ⁿ) - Every state recursively explores multiple possibili
 Space Complexity : O(n) - Due to the recursion call stack.
 
 Company Question - Amazon - important question
-Interview Explanation : 
+
+Interview Explanation : I use recursion to simulate both players playing optimally. At every turn, Player 1 can
+                        choose either the left or right element. Since Player 2 also plays optimally, I consider
+                        the minimum score Player 1 can get after Player 2's move. Finally, I take the maximum score between the two choices.
+                        After calculating Player 1's score, I compare it with Player 2's score to determine whether Player 1 can win.
 
 Date         : 01-08-2026
 Author       : Om Singh

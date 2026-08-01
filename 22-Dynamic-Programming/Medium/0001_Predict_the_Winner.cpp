@@ -5,9 +5,18 @@ Platform     : LeetCode
 Pattern      : Dynamic Programming
 Difficulty   : Medium
 
-Approach     :
+Approach     : > Calculate the total sum of all elements.
+               > Use recursion to find the maximum score Player 1 can obtain.
+               > At each step, Player 1 has two choices:
+                  1. Pick the left element.
+                  2. Pick the right element.
+               > After Player 1 picks a number, Player 2 also plays optimally, so Player 1 considers the minimum score from the next possible states.
+               > Choose the maximum score between picking the left or right element.
+               > Calculate Player 2's score as:
+                    player2 = totalScore - player1Score
+               >If player1Score >= player2Score, return true; otherwise, return false.
 
-Time Complexity  :
+Time Complexity  : O(2ⁿ) - Every state recursively explores multiple possibilities, leading to exponential time.
 Space Complexity :
 
 Company Question - Amazon - important question

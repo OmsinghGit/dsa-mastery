@@ -5,7 +5,19 @@ Platform     : LeetCode
 Pattern      : Dynamic Programming
 Difficulty   : Medium
 
-Approach     :
+Approach     : > Create a DP table to store already solved states.
+               > Use recursion to solve the game for the current range (i, j).
+               > At each step, the current player has two choices:
+                    1. Pick the left stone.
+                    2. Pick the right stone.
+               > Calculate the score difference for both choices.
+               > Choose the option that gives the maximum score difference.
+               > Store the result in the DP table to avoid recomputation.
+               > If the final score difference is positive, Player 1 wins.
+
+
+
+
 
 Time Complexity  :
 Space Complexity :

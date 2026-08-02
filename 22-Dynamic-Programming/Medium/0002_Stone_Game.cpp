@@ -16,11 +16,9 @@ Approach     : > Create a DP table to store already solved states.
                > If the final score difference is positive, Player 1 wins.
 
 
-
-
-
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(n²) - There are n × n possible states (i, j), and each state is computed only once.
+Space Complexity : O(n²) - DP table stores the result for every (i, j) state.
+                           (Recursion stack is O(n).)
 
 Interview Explanation : 
 

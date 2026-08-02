@@ -20,7 +20,9 @@ Time Complexity  : O(n²) - There are n × n possible states (i, j), and each st
 Space Complexity : O(n²) - DP table stores the result for every (i, j) state.
                            (Recursion stack is O(n).)
 
-Interview Explanation : 
+Interview Explanation :  I use recursion with memoization to solve every possible range of the array. For each state, the current player can pick either the left or the right stone.
+                         I calculate the score difference for both choices and choose the better one. To avoid solving the
+                         same subproblem multiple times, I store the result in a DP table. Finally, if the score difference is positive, Player 1 wins.
 
 Date         : 02-08-2026
 Author       : Om Singh

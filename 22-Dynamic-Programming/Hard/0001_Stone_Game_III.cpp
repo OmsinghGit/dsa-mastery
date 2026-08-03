@@ -5,7 +5,14 @@ Platform     : LeetCode
 Pattern      : Dynamic Programming
 Difficulty   : Hard
 
-Approach     :
+Approach     :  > Use recursion with memoization (DP) to avoid solving the same state multiple times.
+                > At each index, the current player can take 1, 2, or 3 stones.
+                > Calculate the score difference for each choice and select the maximum one.
+                > Store the result in the DP array.
+                > At the end, if the score difference is:
+                    Positive -> Alice wins.
+                    Negative -> Bob wins.
+                    Zero -> Tie.
 
 Time Complexity  :
 Space Complexity :

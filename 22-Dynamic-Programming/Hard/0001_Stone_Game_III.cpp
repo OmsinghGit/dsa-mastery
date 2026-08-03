@@ -17,7 +17,10 @@ Approach     :  > Use recursion with memoization (DP) to avoid solving the same 
 Time Complexity  :  O(n) - Each index is solved only once. && At every index, we try at most 3 choices.
 Space Complexity :  O(n) - DP array stores the result for each index. Recursion stack also takes O(n) space.
 
-Interview Explanation : 
+Interview Explanation : I use recursion with memoization to compute the maximum score difference from each index. At every step,
+                        the current player can take one, two, or three stones. I calculate the score difference for each choice, keep the best one,
+                        and store it in the DP array to avoid recomputation. Finally,
+                        I use the score difference to determine whether Alice wins, Bob wins, or the game ends in a tie.
 
 Date         : 03-08-2026
 Author       : Om Singh

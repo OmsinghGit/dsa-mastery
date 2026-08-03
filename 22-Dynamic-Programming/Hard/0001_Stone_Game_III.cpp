@@ -14,8 +14,8 @@ Approach     :  > Use recursion with memoization (DP) to avoid solving the same 
                     Negative -> Bob wins.
                     Zero -> Tie.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  :  O(n) - Each index is solved only once. && At every index, we try at most 3 choices.
+Space Complexity :  O(n) - DP array stores the result for each index. Recursion stack also takes O(n) space.
 
 Interview Explanation : 
 

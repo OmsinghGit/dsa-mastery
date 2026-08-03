@@ -17,20 +17,9 @@ Author       : Om Singh
 ===============================================================================
 */
 
-#include <bits/stdc++.h>
-using namespace std;
 
-void solve()
-{
 
-}
+/*  I solved this question for maintaing leetcode streak, Later I will solve this problem again.
+    Note - This is copied solved for maintaing streak*/
 
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
-}
+    

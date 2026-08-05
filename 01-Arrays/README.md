@@ -26,7 +26,7 @@ Hard/
 
 | Difficulty | Solved |
 |------------|--------|
-| Easy | 6 |
+| Easy | 7 |
 | Medium | 3 |
 | Hard | 0 |
 

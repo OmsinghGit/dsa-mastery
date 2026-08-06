@@ -17,20 +17,24 @@ Author       : Om Singh
 ===============================================================================
 */
 
-#include <bits/stdc++.h>
-using namespace std;
-
-void solve()
+class Solution
 {
-
-}
-
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
+    public: 
+    int smallestNumber (int n, int t)
+    {
+        int current = n;
+        while(true)
+        {
+            int product = 1;
+            int temp = current;
+            while(temp > 0)
+            {
+                int digit = temp % 10;
+                temp /= 10;
+                product *= digit;
+            }
+            if (product % t == 0) return current;
+            current ++;      
+        }
+    }
 }

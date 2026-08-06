@@ -1,9 +1,9 @@
 /*
 ===============================================================================
-Problem      : Remove method from project
+Problem      : Smallest Divisible Digit Product I
 Platform     : LeetCode
-Pattern      : Graph
-Difficulty   : Medium
+Pattern      : Math
+Difficulty   : Easy
 
 Approach     :
 
@@ -12,7 +12,25 @@ Space Complexity :
 
 Interview Explanation : 
 
-Date         : 05-08-2026
+Date         : 06-08-2026
 Author       : Om Singh
 ===============================================================================
 */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve()
+{
+
+}
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    solve();
+
+    return 0;
+}

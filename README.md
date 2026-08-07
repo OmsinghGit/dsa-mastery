@@ -1,8 +1,7 @@
 # DSA Mastery 🚀
 
-A professional collection of Data Structures & Algorithms solutions in C++.
-Building a strong foundation for coding interviews and competitive programming including my creative journey.
+A structured collection of **Data Structures & Algorithms** solutions in **C++**, documenting my journey toward becoming a better Software Engineer and AI Engineer.
 
-> Currently under development. Development is current process. 
+This repository is designed not only to store solutions but also to build strong problem-solving skills through organized practice, automation, and continuous learning.
 
-Updating Daily
+> 🚀 Actively maintained. Every solved problem is a step toward mastery.

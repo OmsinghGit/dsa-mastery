@@ -5,7 +5,8 @@ Platform     : LeetCode
 Pattern      : Strings
 Difficulty   : Easy
 
-Approach     :
+Approach     : Traverse every word -> check every char -> if matches then add index to ans
+                -> use break for unique indexing -> returna answer.
 
 Time Complexity  :
 Space Complexity :

@@ -8,7 +8,7 @@ Difficulty   : Easy
 Approach     : Traverse every word -> check every char -> if matches then add index to ans
                 -> use break for unique indexing -> returna answer.
 
-Time Complexity  :
+Time Complexity  : O(N x L) N = no.of words, L = avg lenght of each wprd
 Space Complexity :
 
 Interview Explanation : 

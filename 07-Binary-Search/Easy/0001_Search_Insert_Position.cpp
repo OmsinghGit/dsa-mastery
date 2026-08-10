@@ -5,7 +5,9 @@ Platform     : LeetCode
 Pattern      : Binary Search
 Difficulty   : Easy
 
-Approach     :
+Approach     :  Apply Binary Search on the sorted array.
+                If target is found, return its index.
+                Otherwise, return s, the correct insertion position.
 
 Time Complexity  :
 Space Complexity :

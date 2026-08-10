@@ -10,7 +10,7 @@ Approach     :  Apply Binary Search on the sorted array.
                 Otherwise, return s, the correct insertion position.
 
 Time Complexity  :  O (log n) - Binary Search
-Space Complexity :
+Space Complexity : O(1)
 
 Interview Explanation : 
 

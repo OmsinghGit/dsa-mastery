@@ -9,7 +9,7 @@ Approach     :  Apply Binary Search on the sorted array.
                 If target is found, return its index.
                 Otherwise, return s, the correct insertion position.
 
-Time Complexity  :
+Time Complexity  :  O (log n) - Binary Search
 Space Complexity :
 
 Interview Explanation : 

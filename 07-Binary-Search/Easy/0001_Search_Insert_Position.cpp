@@ -12,7 +12,8 @@ Approach     :  Apply Binary Search on the sorted array.
 Time Complexity  :  O (log n) - Binary Search
 Space Complexity : O(1)
 
-Interview Explanation : I use binary search to find the target. If it is not present, s gives the position where the target should be inserted.
+Interview Explanation : I use binary search to find the target. If it is not present, 
+                        s gives the position where the target should be inserted.
 
 Date         : 10-08-2026
 Author       : Om Singh

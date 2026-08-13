@@ -13,7 +13,8 @@ Approach     :  1. Traverse each "words" {each string} for word.
 Time Complexity  : O(n) — we traverse the words once.
 Space Complexity : O(1) — only a few variables are used; no extra data structure.
 
-Interview Explanation : 
+Interview Explanation : I compare the first character of each word with the corresponding character of s. 
+                        If any character is different or the lengths are different, I return false. Otherwise, I return true.
 
 Date         : 12-08-2026
 Author       : Om Singh

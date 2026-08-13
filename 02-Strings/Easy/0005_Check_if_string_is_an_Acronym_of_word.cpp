@@ -6,6 +6,10 @@ Pattern      : Strings
 Difficulty   : Easy
 
 Approach     : - Using two pointer method/approach
+                1. Traverse each "words" {each string} for word.
+                2. choose first character of each word word[i][0],
+                3. compare that string s with corresponding index,
+                4. if mismatch - return false, if matched return true.
 
 Time Complexity  :
 Space Complexity :

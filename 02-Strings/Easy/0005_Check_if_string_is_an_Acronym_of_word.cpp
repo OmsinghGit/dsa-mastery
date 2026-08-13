@@ -5,7 +5,7 @@ Platform     : LeetCode
 Pattern      : Strings
 Difficulty   : Easy
 
-Approach     :
+Approach     : - Using two pointer method/approach
 
 Time Complexity  :
 Space Complexity :

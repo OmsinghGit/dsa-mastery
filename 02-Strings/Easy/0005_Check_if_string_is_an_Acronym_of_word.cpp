@@ -5,14 +5,13 @@ Platform     : LeetCode
 Pattern      : Strings
 Difficulty   : Easy
 
-Approach     : - Using two pointer method/approach
-                1. Traverse each "words" {each string} for word.
+Approach     :  1. Traverse each "words" {each string} for word.
                 2. choose first character of each word word[i][0],
                 3. compare that string s with corresponding index,
                 4. if mismatch - return false, if matched return true.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(n) — we traverse the words once.
+Space Complexity : O(1) — only a few variables are used; no extra data structure.
 
 Interview Explanation : 
 

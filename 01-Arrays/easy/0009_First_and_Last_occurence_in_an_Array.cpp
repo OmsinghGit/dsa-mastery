@@ -5,12 +5,14 @@ Platform     : Practice
 Pattern      : Arrays
 Difficulty   : Easy
 
-Approach     :  
+Approach     :  1. Traverse the array.
+                2. if first == -1, then first = i.
+                3. Update last = -1 always
 
 Time Complexity  : O(n)
 Space Complexity : O(1)
 
-Interview Explanation : 
+Interview Explanation : After traversing the array, upadte last = -1 before if first == -1, then first = i.
 
 Date         : 14-08-2026
 Author       : Om Singh

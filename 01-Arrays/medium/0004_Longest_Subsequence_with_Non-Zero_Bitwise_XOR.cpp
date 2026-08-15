@@ -12,7 +12,7 @@ Approach     : 1. Calculate XOR of whole array
                     > else return n-1
 
 Time Complexity  : O(n) — one loop through the array
-Space Complexity :
+Space Complexity : O(1) — only xorValue and allZero extra variables.
 
 Interview Explanation : 
 

@@ -11,7 +11,7 @@ Approach     : 1. Calculate XOR of whole array
                     > if all elements are 0 - return 0
                     > else return n-1
 
-Time Complexity  :
+Time Complexity  : O(n) — one loop through the array
 Space Complexity :
 
 Interview Explanation : 

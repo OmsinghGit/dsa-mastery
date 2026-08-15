@@ -14,7 +14,9 @@ Approach     : 1. Calculate XOR of whole array
 Time Complexity  : O(n) — one loop through the array
 Space Complexity : O(1) — only xorValue and allZero extra variables.
 
-Interview Explanation : 
+Interview Explanation : I calculate the XOR of all elements. If it is non-zero, the whole array is valid. If it is
+                        zero but there is a non-zero element, I remove one element, giving n-1. If all
+                        elements are zero, the answer is 0.
 
 Date         : 15-08-2026
 Author       : Om Singh

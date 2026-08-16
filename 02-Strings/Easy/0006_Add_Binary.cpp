@@ -11,8 +11,8 @@ Approach     : Start from right to left.
                Update carry using sum / 2.
                Reverse the answer at the end.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(n)
+Space Complexity : O(n) — result string.
 
 Interview Explanation : 
 

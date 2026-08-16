@@ -5,7 +5,11 @@ Platform     : LeetCode
 Pattern      : Strings
 Difficulty   : Easy
 
-Approach     :
+Approach     : Start from right to left.
+               Add both binary digits with carry.
+               Store sum % 2 as the result digit.
+               Update carry using sum / 2.
+               Reverse the answer at the end.
 
 Time Complexity  :
 Space Complexity :
@@ -28,7 +32,7 @@ public:
         {
             int sum=carry;
             if (i >= 0) sum += a[i--] - '0';
-if (j >= 0) sum += b[j--] - '0';
+            if (j >= 0) sum += b[j--] - '0';
             ans += (sum%2) + '0';
             carry = sum/2;
         }

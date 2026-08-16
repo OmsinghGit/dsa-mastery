@@ -14,7 +14,7 @@ Approach     : Start from right to left.
 Time Complexity  : O(n)
 Space Complexity : O(n) — result string.
 
-Interview Explanation : 
+Interview Explanation : Add both binary strings from right to left while handling carry, just like normal binary addition. Build the result and reverse it at the end.
 
 Date         : 16-08-2026
 Author       : Om Singh

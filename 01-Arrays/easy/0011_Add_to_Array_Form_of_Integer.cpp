@@ -13,7 +13,8 @@ Approach     : Start from the last digit.
 Time Complexity  : O(n + k_digits) → effectively O(n), where n is the number of digits and k_digits is the number of digits in k.
 Space Complexity : O(1) extra space — excluding the output array.
 
-Interview Explanation : 
+Interview Explanation : I process the number from right to left and add k directly to each digit. The remainder becomes the current digit, 
+                        while the quotient becomes the carry for the next position. Any remaining carry is added to the front.
 
 Date         : 17-08-2026
 Author       : Om Singh

@@ -10,8 +10,8 @@ Approach     : Start from the last digit.
                Store sum % 10 as the digit and keep sum / 10 as the remaining carry.
                After the array ends, add any remaining k to the front.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(n + k_digits) → effectively O(n), where n is the number of digits and k_digits is the number of digits in k.
+Space Complexity : O(1) extra space — excluding the output array.
 
 Interview Explanation : 
 

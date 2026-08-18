@@ -5,11 +5,10 @@ Platform     : LeetCode
 Pattern      : Arrays
 Difficulty   : Easy
 
-Approach     : > using rightmost shifting, first find all the digit of the K.
-               > Add in nums and update the array.
-               > Now, shift num from left and k from right.
-               > if k > 0 insert it.
-               > Return num
+Approach     : Start from the last digit.
+               Add k to the current digit.
+               Store sum % 10 as the digit and keep sum / 10 as the remaining carry.
+               After the array ends, add any remaining k to the front.
 
 Time Complexity  :
 Space Complexity :

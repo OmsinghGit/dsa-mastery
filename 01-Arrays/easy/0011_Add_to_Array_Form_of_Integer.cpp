@@ -5,7 +5,11 @@ Platform     : LeetCode
 Pattern      : Arrays
 Difficulty   : Easy
 
-Approach     :
+Approach     : > using rightmost shifting, first find all the digit of the K.
+               > Add in nums and update the array.
+               > Now, shift num from left and k from right.
+               > if k > 0 insert it.
+               > Return num
 
 Time Complexity  :
 Space Complexity :

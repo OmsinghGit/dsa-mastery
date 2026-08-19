@@ -17,20 +17,21 @@ Author       : Om Singh
 ===============================================================================
 */
 
-#include <bits/stdc++.h>
-using namespace std;
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+       for (int i=0; i<nums.size(); i++)
+       {
+        int left_sum=0, right_sum=0;
+        for (int j=0; j<i; j++)
+        left_sum += nums[j];
 
-void solve()
-{
+        for (int j=i+1; j<nums.size(); j++)
+        right_sum += nums[j];
 
-}
-
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
-}
+        if (left_sum == right_sum)
+        return i;
+       }
+       return -1;
+    }
+};

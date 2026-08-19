@@ -7,10 +7,10 @@ Difficulty   : Easy
 
 Approach     :
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(n²)
+Space Complexity : O(1)
 
-Interview Explanation : 
+Interview Explanation :  For every index, I calculate the sum of elements on its left and right using two loops. If both sums are equal, I return that index as the pivot index. 
 
 Date         : 19-08-2026
 Author       : Om Singh

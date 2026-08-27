@@ -5,12 +5,12 @@ Platform     : LeetCode
 Pattern      : Arrays
 Difficulty   : Easy
 
-Approach     :
+Approach     : Create an ans array and for each index: ans[i] = nums[nums[i]];
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(n) — we traverse the array once.
+Space Complexity : O(n) — we create a new ans array.
 
-Interview Explanation : 
+Interview Explanation : For each index, I use nums[i] as an index to access nums[nums[i]] and store that value in the answer array.
 
 Date         : 27-08-2026
 Author       : Om Singh

@@ -20,12 +20,54 @@ Author       : Om Singh
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
-        int start = 0, end = nums.size()-1;
-        while (left <= right)
+
+        int firstIndex = -1, lastIndex = -1;
+        int first = 0, last = nums.size() - 1;
+
+        // Find first occurrence
+        while (first <= last)
         {
-            int mid = start + (end - start)/2;
-            
+            int mid = first + (last - first) / 2;
+
+            if (nums[mid] == target)
+            {
+                firstIndex = mid;
+                last = mid - 1;
+            }
+            else if (nums[mid] < target)
+            {
+                first = mid + 1;
+            }
+            else
+            {
+                last = mid - 1;
+            }
         }
-        return [-1.-1];
+
+        // Reset
+        first = 0;
+        last = nums.size() - 1;
+
+        // Find last occurrence
+        while (first <= last)
+        {
+            int mid = first + (last - first) / 2;
+
+            if (nums[mid] == target)
+            {
+                lastIndex = mid;
+                first = mid + 1;
+            }
+            else if (nums[mid] < target)
+            {
+                first = mid + 1;
+            }
+            else
+            {
+                last = mid - 1;
+            }
+        }
+
+        return {firstIndex, lastIndex};
     }
 };

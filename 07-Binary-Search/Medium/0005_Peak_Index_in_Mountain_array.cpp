@@ -7,7 +7,7 @@ Difficulty   : Medium
 
 Approach     :
 
-Time Complexity  : O (log (n))
+Time Complexity  : 
 Space Complexity :
 
 Interview Explanation : 

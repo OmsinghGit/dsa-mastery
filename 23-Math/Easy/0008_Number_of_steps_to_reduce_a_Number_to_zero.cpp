@@ -5,10 +5,15 @@ Platform     : LeetCode
 Pattern      : Math
 Difficulty   : Easy
 
-Approach     :
+Approach     : Use a while loop that runs until num becomes 0.
 
-Time Complexity  :
-Space Complexity :
+                    - If num is even, divide it by 2.
+                    - If num is odd, subtract 1.
+                    - Increment steps after every operation.
+                    - When num becomes 0, return steps.
+
+Time Complexity  : 
+Space Complexity : 
 
 Interview Explanation : 
 

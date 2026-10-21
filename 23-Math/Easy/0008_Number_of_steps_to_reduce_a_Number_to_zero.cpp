@@ -12,7 +12,7 @@ Approach     : Use a while loop that runs until num becomes 0.
                     - Increment steps after every operation.
                     - When num becomes 0, return steps.
 
-Time Complexity  : 
+Time Complexity  : O(log n)
 Space Complexity : 
 
 Interview Explanation : 

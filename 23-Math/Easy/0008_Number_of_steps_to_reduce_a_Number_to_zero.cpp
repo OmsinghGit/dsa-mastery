@@ -15,7 +15,8 @@ Approach     : Use a while loop that runs until num becomes 0.
 Time Complexity  : O(log n)
 Space Complexity : O(1) — Only a constant amount of extra space is used for variables like steps.
 
-Interview Explanation : 
+Interview Explanation :  I use a while loop that continues until the number becomes zero. If the number is even, I divide it by 2;
+                         otherwise, I subtract 1. I increment the step counter after every operation. Once the number reaches zero, I return the total number of steps.
 
 Date         : 21-10-2026
 Author       : Om Singh

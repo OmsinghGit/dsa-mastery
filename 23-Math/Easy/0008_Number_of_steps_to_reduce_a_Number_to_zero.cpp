@@ -13,7 +13,7 @@ Approach     : Use a while loop that runs until num becomes 0.
                     - When num becomes 0, return steps.
 
 Time Complexity  : O(log n)
-Space Complexity : 
+Space Complexity : O(1) — Only a constant amount of extra space is used for variables like steps.
 
 Interview Explanation : 
 

@@ -17,20 +17,20 @@ Author       : Om Singh
 ===============================================================================
 */
 
-#include <bits/stdc++.h>
-using namespace std;
+class Solution {
+public:
+    int numberOfSteps(int num) {
 
-void solve()
-{
+        int steps=0;
+        while(num!=0)
+        {
+            if (num%2==0)
+            num/=2;
+            else
+            num-=1;
 
-}
-
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
-}
+            steps++;
+        }
+        return steps;
+    }
+};

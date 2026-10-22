@@ -5,7 +5,14 @@ Platform     : LeetCode
 Pattern      : Math
 Difficulty   : Easy
 
-Approach     :
+Approach     : > Intitalizing the product to 1 and sum to 0;
+               1. using while loop till n!=0;
+               2. seperating the digits from the given number;
+               3. using product - finding the products of digits;
+               4. using sum - finding the sum of digits;
+               5. updating the value of n;
+               6. store the result = product - sum;
+               7. return result.
 
 Time Complexity  :
 Space Complexity :

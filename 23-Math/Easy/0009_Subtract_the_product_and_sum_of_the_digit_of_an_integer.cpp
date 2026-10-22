@@ -14,8 +14,8 @@ Approach     : > Intitalizing the product to 1 and sum to 0;
                6. store the result = product - sum;
                7. return result.
 
-Time Complexity  :
-Space Complexity :
+Time Complexity  : O(d), where d is the number of digits in n.
+Space Complexity : O(1), because we use only a constant number of variables, such as digit, product, sum, and result
 
 Interview Explanation : 
 

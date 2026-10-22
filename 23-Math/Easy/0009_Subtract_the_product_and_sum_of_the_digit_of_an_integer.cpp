@@ -17,7 +17,7 @@ Approach     : > Intitalizing the product to 1 and sum to 0;
 Time Complexity  : O(d), where d is the number of digits in n.
 Space Complexity : O(1), because we use only a constant number of variables, such as digit, product, sum, and result
 
-Interview Explanation : 
+Interview Explanation : DIY
 
 Date         : 22-10-2026
 Author       : Om Singh

@@ -15,7 +15,7 @@ Approach     : Use an outer while loop to repeat until num becomes a single-digi
 Time Complexity  : O(log² n) — Each round processes all digits, and the number of digits decreases after each round.
 Space Complexity : O(1) — Only a few integer variables are used; no extra data structures are needed.
 
-Interview Explanation : DIY
+Interview Explanation : DIY - during revision time. 
 
 Date         : 23-10-2026
 Author       : Om Singh

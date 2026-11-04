@@ -17,20 +17,19 @@ Author       : Om Singh
 ===============================================================================
 */
 
-#include <bits/stdc++.h>
-using namespace std;
-
-void solve()
-{
-
-}
-
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    solve();
-
-    return 0;
-}
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        int sum=0,product=1,result=0;
+            while (n!=0)
+            {
+                int digit=n%10;
+                n/=10;
+                sum+=digit;
+                product *= digit;
+            } 
+        result = product - sum;
+        return result;
+        
+    }
+};

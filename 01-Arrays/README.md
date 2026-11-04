@@ -1,37 +1,46 @@
 # Arrays
 
-## 📚 Concepts
+This section contains array-focused DSA problems and solutions, organized by difficulty.
 
-- Traversal
-- Prefix Sum
+## 📚 Core Concepts
+
+- Array traversal
+- Two-pointer technique
+- Prefix sums
+- Sorting and searching
+- Rotation and pivot logic
 - Kadane's Algorithm
-- Rotation
-- Two Sum
-- Merge Intervals
-- Dutch National Flag
+- Frequency and counting
+- Greedy observations
 
----
+## 📁 Folder Structure
 
-## 📂 Structure
-
+```text
+01-Arrays/
+├── easy/
+├── medium/
+├── hard/
+├── README.md
 ```
-Easy/
-Medium/
-Hard/
-```
-
----
 
 ## 📈 Progress
 
-| Difficulty | Solved |
-|------------|--------|
-| Easy | 7 |
-| Medium | 3 |
-| Hard | 0 |
-
----
+| Difficulty | Solved Problems |
+|------------|-----------------|
+| Easy       | 16              |
+| Medium     | 4               |
+| Hard       | 0               |
 
 ## 📝 Notes
 
-_Add important observations and tricks here while solving problems._
+- Focus on understanding patterns, not just memorizing solutions.
+- Practice both brute-force and optimized approaches.
+- For each problem, try to identify:
+  - input pattern
+  - edge cases
+  - time complexity
+  - space complexity
+
+## ✅ Goal
+
+Build a strong understanding of array manipulation, optimization, and problem-solving patterns through consistent practice.
